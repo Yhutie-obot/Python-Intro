@@ -1,7 +1,7 @@
-food_list = ['Editan', 'Afang', 'Ekwong', 'White-soup', 'Atama']
-payment_method = ['Cash', 'PoS', 'Transfer']
-Account_Details = ['Account Number: 0043214509', 'Account name: Yhutieplus kitchen', 'Bank name: Opay']
+import paymentmethod
+import Account_Details
 
+food_list = ['Editan', 'Afang', 'Ekwong', 'White-soup', 'Atama']
 print('Welcome to YHUTIEPLUS KITCHEN')
 client = input('May I get your name please: ')
 print('Hi' +' ' + client + ' ' 'I am your waitress and I am pleased to have you at YHUTIEPLUS KITCHEN')
@@ -11,14 +11,14 @@ for food_list in food_list:
 print(client + ' ' + ' What is your meal choice:')
 meal = input('Type here: ')
 if meal == food_list[0]:
-    print(payment_method)
+    print(pm)
     print('Choose your payment method: ')
-    if payment_method == payment_method[0]:
+    if pm == pm[0]:
         print(food_list[0] + ' ' + 'is served')
-    elif payment_method == payment_method[1]:
-        print(payment_method[1] + ' ' + 'is on the way')
-    elif payment_method == payment_method[2]:
-        print(Account_Details)
+    elif pm == pm[1]:
+        print(pm[1] + ' ' + 'is on the way')
+    elif pm == pm[2]:
+        print(ad)
         
 else:
     if meal == food_list[1]:
